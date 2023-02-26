@@ -1,18 +1,18 @@
-Code/CachedData
-Code/Cache*
-Code/CachedExtension*
-Code/Code Cache
-Code/Cookies*
-Code/Crashpad
-Code/GPUCache
-Code/Local Storage
-Code/Service Worker
-Code/Session Storage
-Code/TransportSecurity
-Code/User/History
-Code/User/workspaceStorage
-Code/User/globalStorage
-Code/databases
-Code/logs
-Code/machineid
-Code/Quota*
+Code*/CachedData
+Code*/Cache*
+Code*/CachedExtension*
+Code*/Code Cache
+Code*/Cookies*
+Code*/Crashpad
+Code*/GPUCache
+Code*/Local Storage
+Code*/Service Worker
+Code*/Session Storage
+Code*/TransportSecurity
+Code*/User/History
+Code*/User/workspaceStorage
+Code*/User/globalStorage
+Code*/databases
+Code*/logs
+Code*/machineid
+Code*/Quota*
