@@ -1,0 +1,19 @@
+set fish_greeting
+set PS1 '[\u@\h \W]\$ '
+function msdos_pwd
+{
+	local dir="`pwd`"
+
+	echo $dir | tr '/' '\\'
+}
+end
+set PS1 'C:`msdos_pwd`>'
+export PS1
+
+function fish_prompt
+	echo "C:$PWD>"
+end
+echo 
+echo "Microsoft(R) Windows 95"
+echo "   (C)Copyright Microsoft Corp 1981-1996."
+echo
