@@ -27,3 +27,4 @@ nvim/lua/configs
 nvim/lua/core
 nvim/lua/default_theme
 nvim/lua/user_example
+oh-my-zsh/cache/.zsh-update
