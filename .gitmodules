@@ -4,6 +4,3 @@
 [submodule "lite-xl/lite-xl-terminal"]
 	path = lite-xl/lite-xl-terminal
 	url = https://github.com/benjcollins/lite-xl-terminal
-[submodule "nvim"]
-	path = nvim
-	url = https://github.com/AstroNvim/AstroNvim
