@@ -16,3 +16,14 @@ Code*/databases
 Code*/logs
 Code*/machineid
 Code*/Quota*
+nvim/.git
+nvim/.github
+nvim/colors
+nvim/config.ld
+nvim/init.lua
+nvim/LICENSE
+nvim/packer_snapshot
+nvim/lua/configs
+nvim/lua/core
+nvim/lua/default_theme
+nvim/lua/user_example
