@@ -1,3 +1,6 @@
 [submodule "lite-xl/lite-xl-plugins"]
 	path = lite-xl/lite-xl-plugins
 	url = https://github.com/lite-xl/lite-xl-plugins
+[submodule "lite-xl/lite-xl-terminal"]
+	path = lite-xl/lite-xl-terminal
+	url = https://github.com/benjcollins/lite-xl-terminal

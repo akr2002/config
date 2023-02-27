@@ -1,0 +1,1 @@
+return {recents={[3]="/home/user/dev",[1]="/home/user",[2]="/home/user/dev/cpp",[4]="/home"}, window={[1]=1920,[2]=954,[3]=0,[4]=66,["n"]=4}, window_mode="maximized", previous_find={}, previous_replace={}}
