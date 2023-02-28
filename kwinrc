@@ -1,3 +1,6 @@
+[$Version]
+update_info=kwin.upd:replace-cascaded-zerocornered
+
 [%24Version]
 update_info=kwin.upd:make-translucency-effect-disabled-by-default, kwin.upd:remove-flip-switch-effect, kwin.upd:remove-cover-switch-effect, kwin.upd:remove-cubeslide-effect, kwin.upd:remove-xrender-backend
 
@@ -6,16 +9,16 @@ GLCore=true
 OpenGLIsUnsafe=false
 
 [Desktops]
-Id_1=e9ad5369-0684-44dd-82eb-cb876e3ba3a3
-Id_10=0264d213-d268-4dcb-b6a1-b68423f35ace
-Id_2=2f2d0f9e-f2ab-49f0-8a52-2b9cb86a98d0
-Id_3=d6ff2bbe-cdd0-4f83-af33-43f59ea9033b
-Id_4=c0ada718-6fca-402a-9664-344bcf263508
-Id_5=99dd0cc2-349b-42bd-a1db-198514f912ac
-Id_6=084f97e6-643d-40cc-8571-fdb830d78031
-Id_7=19cc31b0-6b41-4638-b715-cac90b7c5d85
-Id_8=4c2f4c10-ad5b-4e55-a8c1-5c908cad9087
-Id_9=325f64c1-a23c-4784-b3a9-9207ce21f51a
+Id_1=149d1a21-ac9a-43c8-bb42-e3491ec00de2
+Id_10=71b4e45a-9f79-4cb3-b3c6-9350711b5eff
+Id_2=46a4ba17-271b-46e7-93b0-8c5ef67d4881
+Id_3=8d853583-96fc-479f-bf81-f71f079361ee
+Id_4=c229c3a7-e154-4874-890e-8e4fc0be1cc5
+Id_5=b8d7f59b-848d-4b62-b8b3-ca1744589b47
+Id_6=8024f374-edf0-4420-91da-ee2e084be135
+Id_7=7dcf3abe-ee6e-482f-804f-2b873cddf5ed
+Id_8=0c7a6375-b8ae-4f02-994e-d70d960eff84
+Id_9=bd1a8aa3-8f94-426f-abf2-1b52a1327f25
 Number=10
 Rows=2
 
@@ -36,6 +39,12 @@ BorderActivateAll=9
 InScale=0.91
 OutScale=0.91
 
+[Effect-overview]
+BorderActivate=0
+
+[ElectricBorders]
+TopRight=ShowDesktop
+
 [NightColor]
 LatitudeAuto=22.518
 LongitudeAuto=88.3832
@@ -43,14 +52,14 @@ Mode=Constant
 NightTemperature=3500
 
 [Plugins]
-desktopchangeosdEnabled=false
+force-decorations-gtk3Enabled=true
 forceblurEnabled=true
-krohnkiteEnabled=false
+krohnkiteEnabled=true
 kwin4_effect_eyeonscreenEnabled=true
-kwin4_effect_fadeEnabled=false
-kwin4_effect_scaleEnabled=true
 kwin4_effect_windowapertureEnabled=false
+macsimizeEnabled=false
 magiclampEnabled=false
+max2NewVirtualDesktopEnabled=false
 minimizeallEnabled=true
 snaphelperEnabled=true
 synchronizeskipswitcherEnabled=false
@@ -80,9 +89,17 @@ tileLayoutGap=5
 BorderActivate=
 Enabled=false
 
+[TabBox]
+LayoutName=informative
+
+[Tiling]
+padding=4
+
+[Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Windows]
 BorderlessMaximizedWindows=false
-ElectricBorders=1
 FocusPolicy=FocusFollowsMouse
 FocusStealingPreventionLevel=0
 HideUtilityWindowsForInactive=false
@@ -90,11 +107,16 @@ HideUtilityWindowsForInactive=false
 [Workspace]
 CurrentDesktop=1
 
+[Xwayland]
+Scale=1
+
 [deepin-chameleon]
 theme=dark/deepin
 
 [org.kde.kdecoration2]
 BorderSize=None
 BorderSizeAuto=false
-ButtonsOnLeft=
-ButtonsOnRight=HIAX
+ButtonsOnLeft=XAI
+ButtonsOnRight=H
+library=org.kde.breeze
+theme=Breeze
