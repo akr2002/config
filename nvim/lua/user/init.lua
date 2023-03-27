@@ -30,9 +30,9 @@ local config = {
 
   -- Add highlight groups in any theme
   highlights = {
-     --init = { -- this table overrides highlights in all themes
-       --Normal = {  },
-     --},
+    --init = { -- this table overrides highlights in all themes
+    --Normal = {  },
+    --},
     -- duskfox = { -- a table of overrides/changes to the duskfox theme
     --   Normal = { bg = "#000000" },
     -- },
@@ -86,13 +86,13 @@ local config = {
   },
 
   -- Default theme configuration
-      default_theme = {
-  -- Modify the color palette for the default theme
-      colors = {
+  default_theme = {
+    -- Modify the color palette for the default theme
+    colors = {
       fg = "#abb2bf",
       bg = "#1e222a",
-      },
-      highlights = function(hl) -- or a function that returns a new table of colors to set
+    },
+    highlights = function(hl) -- or a function that returns a new table of colors to set
       local C = require "default_theme.colors"
 
       hl.Normal = { fg = C.fg, bg = C.bg }
@@ -146,19 +146,19 @@ local config = {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
-        },
-        ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
-        },
+        -- "go",
       },
-      disabled = { -- disable formatting capabilities for the listed language servers
-        -- "sumneko_lua",
-      },
-      timeout_ms = 1000, -- default format timeout
-      -- filter = function(client) -- fully override the default formatting function
-      --   return true
-      -- end
+      ignore_filetypes = { -- disable format on save for specified filetypes
+      -- "python",
+    },
+  },
+  disabled = { -- disable formatting capabilities for the listed language servers
+  -- "sumneko_lua",
+},
+timeout_ms = 1000, -- default format timeout
+-- filter = function(client) -- fully override the default formatting function
+--   return true
+-- end
     },
     -- easily add or disable built in mappings added during LSP attaching
     mappings = {
@@ -217,59 +217,59 @@ local config = {
 
   -- Configure plugins
   plugins = {
-    init = {
-      -- You can disable default plugins as follows:
-      -- ["goolord/alpha-nvim"] = { disable = true },
+    --init = {
+    -- You can disable default plugins as follows:
+    -- ["goolord/alpha-nvim"] = { disable = true },
 
-      -- You can also add new plugins here as well:
-      -- Add plugins, the packer syntax without the "use"
-      -- { "andweeb/presence.nvim" },
-      -- {
-      --   "ray-x/lsp_signature.nvim",
-      --   event = "BufRead",
-      --   config = function()
-      --     require("lsp_signature").setup()
-      --   end,
-      -- },
+    -- You can also add new plugins here as well:
+    -- Add plugins, the packer syntax without the "use"
+    -- { "andweeb/presence.nvim" },
+    -- {
+    --   "ray-x/lsp_signature.nvim",
+    --   event = "BufRead",
+    --   config = function()
+    --     require("lsp_signature").setup()
+    --   end,
+    -- },
 
-      -- We also support a key value style plugin definition similar to NvChad:
-      -- ["ray-x/lsp_signature.nvim"] = {
-      --   event = "BufRead",
-      --   config = function()
-      --     require("lsp_signature").setup()
-      --   end,
-      -- },
-    },
+    -- We also support a key value style plugin definition similar to NvChad:
+    -- ["ray-x/lsp_signature.nvim"] = {
+    --   event = "BufRead",
+    --   config = function()
+    --     require("lsp_signature").setup()
+    --   end,
+    -- },
+    --},
     -- All other entries override the require("<key>").setup({...}) call for default plugins
-    ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
-      -- config variable is the default configuration table for the setup function call
-      -- local null_ls = require "null-ls"
+    --["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
+    -- config variable is the default configuration table for the setup function call
+    -- local null_ls = require "null-ls"
 
-      -- Check supported formatters and linters
-      -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-      -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-      config.sources = {
-        -- Set a formatter
-        -- null_ls.builtins.formatting.stylua,
-        -- null_ls.builtins.formatting.prettier,
-      }
-      return config -- return final config table
-    end,
-    treesitter = { -- overrides `require("treesitter").setup(...)`
-      -- ensure_installed = { "lua" },
-    },
+    -- Check supported formatters and linters
+    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
+    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
+    --config.sources = {
+    -- Set a formatter
+    -- null_ls.builtins.formatting.stylua,
+    -- null_ls.builtins.formatting.prettier,
+    --}
+    --return config -- return final config table
+    --end,
+    -- treesitter = { -- overrides `require("treesitter").setup(...)`
+    -- ensure_installed = { "lua" },
+    --},
     -- use mason-lspconfig to configure LSP installations
-    ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
-      -- ensure_installed = { "sumneko_lua" },
-    },
+    --["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
+    -- ensure_installed = { "sumneko_lua" },
+    --},
     -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
-    ["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
-      -- ensure_installed = { "prettier", "stylua" },
-    },
-    ["mason-nvim-dap"] = { -- overrides `require("mason-nvim-dap").setup(...)`
-      -- ensure_installed = { "python" },
-    },
+    --["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
+    -- ensure_installed = { "prettier", "stylua" },
   },
+  --["mason-nvim-dap"] = { -- overrides `require("mason-nvim-dap").setup(...)`
+  -- ensure_installed = { "python" },
+  --},
+  --  },
 
   -- LuaSnip Options
   luasnip = {
