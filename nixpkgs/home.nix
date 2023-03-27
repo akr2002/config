@@ -14,8 +14,18 @@
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "22.05";
+  home.stateVersion = "unstable";
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+	nixpkgs.config.allowUnfree = true;
+
+	targets.genericLinux.enable = true;
+
+  home.packages = [
+		pkgs.kotlin
+  ];
+
+	programs.emacs.enable = yes;
 }
