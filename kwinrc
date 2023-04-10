@@ -56,6 +56,7 @@ force-decorations-gtk3Enabled=true
 forceblurEnabled=true
 krohnkiteEnabled=true
 kwin4_effect_eyeonscreenEnabled=true
+kwin4_effect_translucencyEnabled=true
 kwin4_effect_windowapertureEnabled=false
 macsimizeEnabled=false
 magiclampEnabled=false
@@ -96,6 +97,9 @@ LayoutName=informative
 padding=4
 
 [Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][385f9c71-c443-51ff-ab2f-ee26cf5710f7]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
