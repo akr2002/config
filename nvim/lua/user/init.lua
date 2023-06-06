@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "zellner",
+  --colorscheme = "default", --zellner",
 
   -- Add highlight groups in any theme
   highlights = {
